@@ -477,6 +477,11 @@ naw button a {
     font-size: 18px;
 }
 
+.footer p:hover {
+    color: #3DA2FF;
+    cursor: pointer;
+}
+
 .footer .row:first-child {
     padding: 100px 100px 0 150px;
 }
@@ -488,4 +493,9 @@ naw button a {
 
 .footer .bg-danger {
     margin-right: 1px;
+}
+
+.row {
+    padding-right: 0;
+    padding-left: 0;
 }
