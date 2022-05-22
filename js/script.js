@@ -3,6 +3,9 @@ let nav = document.querySelector('#nav')
 let header = document.querySelector('header')
 let hero = document.querySelector('.hero')
 let navbar = document.querySelector('.m-navbar')
+let input = document.querySelector('#input')
+let search = document.querySelector('#search')
+let searchX = document.querySelector('.search-x')
 
 
 none.onclick = () => {
@@ -21,4 +24,13 @@ document.onscroll = () => {
         navbar.style.minHeight = '100px'
     }
 
+}
+
+search.onclick = () => {
+    input.classList.toggle('active')
+    searchX.style.display = 'block'
+}
+
+searchX.onclick = () => {
+    input.classList.remove('active')
 }

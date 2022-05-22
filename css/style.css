@@ -220,6 +220,41 @@ naw button a {
     margin-left: 50px;
 }
 
+#input {
+    min-width: 400px;
+    position: absolute;
+    right: -550px;
+    top: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px 20px 20px;
+    box-shadow: 0px 0px 13px 5px #4d4c4c;
+    background: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#input.active {
+    right: 50px;
+}
+
+#input input {
+    font-size: 20px;
+}
+
+#search {
+    display: block;
+}
+
+.search-x {
+    margin-right: 30px;
+    display: none;
+}
+
 
 /* hero */
 
