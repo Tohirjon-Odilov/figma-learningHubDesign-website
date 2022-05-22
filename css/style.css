@@ -435,13 +435,22 @@ naw button a {
 }
 
 .footer h4 {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .footer p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
-.footer .row {
-    padding: 0 50px 0 200px;
+.footer .row:first-child {
+    padding: 100px 100px 0 150px;
+}
+
+.footer .row:last-child {
+    min-height: 50px;
+    margin-top: 100px;
+}
+
+.footer .bg-danger {
+    margin-right: 1px;
 }
