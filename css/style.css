@@ -499,3 +499,64 @@ naw button a {
     padding-right: 0;
     padding-left: 0;
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-weight: 600;
+        font-size: 40px;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 23px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 17px;
+    }
+    h6 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .top .m-card2 {
+        margin-top: 20px;
+    }
+    .categories .first-child,
+    .recent .first-child {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 15px;
+    }
+    .categories .last-child,
+    .recent #last-child {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 15px;
+    }
+    .c-around {
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer .row:first-child {
+        padding: 0;
+    }
+    .footer .row:last-child {
+        min-height: 50px;
+        margin-top: 50px;
+    }
+    .center {
+        text-align: center;
+    }
+    .c-center {
+        justify-content: center;
+    }
+    .mt {
+        margin-top: 40px;
+    }
+}
