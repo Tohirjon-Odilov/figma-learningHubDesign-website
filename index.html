@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Learning Hub Website Design</title>
@@ -15,12 +17,93 @@
 
 <body>
 
-    <header>
-        <nav class="d-flex justify-content-center align-items-center">
+    <!-- header starts -->
+
+    <header id="fixed">
+        <nav id="nav" class="d-flex transition justify-content-center align-items-center">
             <button><a href="#">NEW</a></button>
-            <h4 class="text-white">LearningHub had just been launched! Check out the <span class="text-white text-decoration-underline">Welcome post.</span></h4>
+            <h6 class="text-white">LearningHub had just been launched! Check out the <span class="pointer text-white text-decoration-underline">Welcome post.</span></h6>
+            <div class="d-flex ml-5">
+                <i class="pointer x-none text-white fas fa-x"></i>
+            </div>
         </nav>
+
+        <div class="m-navbar d-flex justify-content-md-between">
+            <div class="container d-flex justify-content-md-between">
+                <div class="setting d-flex align-items-center">
+                    <span>
+                        <img class="pointer" src="img/Union.png" alt="setting">
+                    </span>
+                    <h4>LearningHub</h4>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="text pointer">Code</div>
+                    <div class="text pointer">Design</div>
+                    <div class="text pointer">Prototyping</div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="pointer" src="img/Group 31.png" alt="">
+                </div>
+            </div>
+        </div>
     </header>
+
+    <!-- header ends -->
+
+    <!-- section hero starts -->
+
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h1>Figma Course</h1>
+                    <h5>Figma is a vector graphics editor and <br> prototyping tool which is primarily <br> web-based.</h5>
+                    <div class="m-3 d-flex align-items-center">
+                        <span>Ready</span>
+                        <i class="pointer mx-2 fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="img-container d-flex align-items-center justify-content-center">
+                        <!-- <img src="img/Figma-logo 1.png" alt=""> -->
+                        <img class="align-items-center" src="img/Figma-logo 2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section hero ends -->
+
+    <!-- section top starts -->
+
+    <section class="top">
+        <div class="container">
+            <div class="row ">
+                <div class="margin col-12 d-flex align-items-end justify-content-between">
+                    <h2>Top</h2>
+                    <p class="blue">See all</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="m-card1 border">
+                        <div class="img">
+                            <img src="img/Page-1.png" alt="NEXT img">
+                        </div>
+                        <div class="text m-4">
+                            <h2>Next.js Introduction</h2>
+                            <p>Next.js is an open-source development <br> framework built on top of Node.js.</p>
+                            <button class="btn-blue">Ready</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section top ends -->
 
 
     <script src="js/bootstrap.min.js"></script>

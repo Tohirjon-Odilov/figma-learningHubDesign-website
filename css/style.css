@@ -9,10 +9,31 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+    transition: all 0.2s linear;
 }
 
 
 /* universal code */
+
+.transition {
+    transition: all 0.5s;
+}
+
+i,
+.pointer {
+    cursor: pointer;
+}
 
 h1 {
     font-weight: 700;
@@ -48,7 +69,7 @@ h3 {
 
 h4 {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 28px;
     line-height: 140%;
     /* or 25px */
     color: #000000;
@@ -57,10 +78,11 @@ h4 {
 
 h5 {
     font-weight: 400;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 140%;
     /* or 39px */
     color: rgba(0, 0, 0, 0.5);
+    margin: 0;
 }
 
 h6 {
@@ -69,6 +91,7 @@ h6 {
     line-height: 140%;
     /* or 31px */
     color: rgba(0, 0, 0, 0.5);
+    margin: 0;
 }
 
 p {
@@ -150,11 +173,91 @@ nav button {
     margin-right: 10px;
 }
 
-new button a {
+naw button a {
     font-weight: 700;
     font-size: 12px;
     line-height: 12px;
     /* identical to box height */
     letter-spacing: 0.05em;
     color: #973EFF;
+}
+
+#fixed {
+    position: fixed;
+    width: 100%;
+}
+
+.m-navbar {
+    width: 100%;
+    min-height: 100px;
+    z-index: 99;
+    background: rgb(253, 252, 252);
+}
+
+.setting span {
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #F5F5F5;
+}
+
+.m-navbar .text {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.ml-5 {
+    margin-left: 50px;
+}
+
+
+/* hero */
+
+.hero {
+    width: 100%;
+    min-height: 550px;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Top */
+
+.top {
+    width: 100%;
+    min-height: 500px;
+}
+
+.top .blue {
+    color: blue;
+    cursor: pointer;
+}
+
+.top .margin {
+    padding: 50px 0;
+}
+
+
+/* .top .m-card1 {} */
+
+.top .m-card1 .img {
+    min-height: 312px;
+    background: linear-gradient(248.96deg, #51ABFF 0%, #BD00FF 100.87%);
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top .m-card2 .img {
+    min-height: 312px;
+    background: linear-gradient(248.96deg, #FF8951 0%, #BD00FF 100.87%);
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
 }
