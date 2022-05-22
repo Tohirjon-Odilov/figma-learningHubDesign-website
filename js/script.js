@@ -6,7 +6,8 @@ let navbar = document.querySelector('.m-navbar')
 let input = document.querySelector('#input')
 let search = document.querySelector('#search')
 let searchX = document.querySelector('.search-x')
-
+let bars = document.querySelector('#bars')
+let barsX = document.querySelector('.bars-x')
 
 none.onclick = () => {
         nav.setAttribute('class', 'd-none')
@@ -29,8 +30,24 @@ document.onscroll = () => {
 search.onclick = () => {
     input.classList.toggle('active')
     searchX.style.display = 'block'
+    mobile.classList.remove('active')
+        // barsX.style.display = 'none'
+        // bars.style.display = 'block'
 }
 
 searchX.onclick = () => {
     input.classList.remove('active')
+}
+
+bars.onclick = () => {
+    bars.style.display = 'none'
+    barsX.style.display = 'block'
+    mobile.classList.add('active')
+    input.classList.remove('active')
+}
+
+barsX.onclick = () => {
+    barsX.style.display = 'none'
+    bars.style.display = 'block'
+    mobile.classList.remove('active')
 }
